@@ -6,8 +6,8 @@ on:
     - 'feat/v2-ci'
 
 jobs:
-  test-cli-yarn:
-    name: "Test CLI (Yarn)"
+  test-cli-npm:
+    name: "Test CLI (npm)"
     env:
       NODE_ENV: CI
       REDIS_URL: redis://localhost:6379
@@ -56,22 +56,22 @@ jobs:
           node-version: 20
   
       - name: Install Dependencies
-        run: yarn install
+        run: npm install
 
       - name: Check CLI tool is installed
         run: ./node_modules/.bin/medusa -v
 
       - name: run build
-        run: yarn build
+        run: npm run build
 
       - name: Run migrations
         run: npx medusa db:migrate
 
       - name: Run seed
-        run: yarn seed
+        run: npm run seed
 
       - name: Run development server
-        run: yarn dev &
+        run: npm run dev &
 
       - name: Wait for live server response
         shell: "bash"
