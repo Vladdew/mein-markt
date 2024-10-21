@@ -46,7 +46,7 @@
     "medusa-plugin-sendgrid": "^1.3.13",
     "meilisearch": "^0.44.1",
     "prism-react-renderer": "^2.0.4",
-    "typeorm": "0.3.16"
+    "typeorm": "0.3.20"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.3",
