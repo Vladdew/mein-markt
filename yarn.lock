@@ -2440,6 +2440,13 @@
     awilix "^8.0.1"
     ulid "^2.3.0"
 
+"@meilisearch/instant-meilisearch@^0.21.1":
+  version "0.21.1"
+  resolved "https://registry.npmjs.org/@meilisearch/instant-meilisearch/-/instant-meilisearch-0.21.1.tgz"
+  integrity sha512-igbDiEwUnYvB0CqbdL7M9ninRL3OGH/my5Aacsz8TaGIWtacCzIaRPgYizHApqPLGT8jk7OSn+OcZrBUa6p6RA==
+  dependencies:
+    meilisearch "^0.44.0"
+
 "@mikro-orm/core@^5.0.0", "@mikro-orm/core@5.9.7":
   version "5.9.7"
   resolved "https://registry.npmjs.org/@mikro-orm/core/-/core-5.9.7.tgz"
@@ -9502,7 +9509,7 @@ meilisearch@^0.32.3:
   dependencies:
     cross-fetch "^3.1.6"
 
-meilisearch@^0.44.1:
+meilisearch@^0.44.0, meilisearch@^0.44.1:
   version "0.44.1"
   resolved "https://registry.npmjs.org/meilisearch/-/meilisearch-0.44.1.tgz"
   integrity sha512-ZTZYBmomtRwjaWbvU8U8ct04g/YnrNOlvchogJOPgHcQIQBfjdbAvMJ8mLhuZEzpioYXIT6Cv+FcE150pc2+nw==
